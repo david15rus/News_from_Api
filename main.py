@@ -1,7 +1,7 @@
 import requests
 import os
 from send_email import send_email
-topic = 'Россия'
+topic = input('Введите интересующую тематику: ')
 API_KEY = os.getenv('Api_key')
 url = f'https://newsapi.org/v2/everything?' \
       f'q={topic}&' \
